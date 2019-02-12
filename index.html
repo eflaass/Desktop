@@ -3,23 +3,57 @@
   <head>
     <meta charset="utf-8">
     <title>Desktop</title>
-    <link rel="stylesheet" href="style.css">
-    <script async type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="styles_main.css">
+    <link rel="stylesheet" href="styles_prophecy.css">
+    <script async type="text/javascript" src="script_prophecy.js"></script>
   </head>
   <body>
     <div class="grid-container">
       <!-- Здесь хочу вставить рандомное предсказание из Prophecy Box -->
-      <div class="prophecy">prop</div>
+      <div class="prophecy">
+        <div class="prophecy__container">
+          <div class="prophecy__wrapper-top">
+            <form class="prophecy__form">
+              <select id="prophecySelect">
+                <option>
+                  Ваш знак зодиака
+                </option>
+                <option value="aries" data-val="Овнам сегодня будет">Овен</option>
+                <option value="taurus" data-val="Тельцам сегодня будет">Телец</option>
+                <option value="gemini" data-val="Близнецам сегодня будет">Близнецы</option>
+                <option value="cancer" data-val="Ракам сегодня будет">Рак</option>
+                <option value="leo" data-val="Львам сегодня будет">Лев</option>
+                <option value="virgo" data-val="Девам сегодня будет">Дева</option>
+                <option value="libra" data-val="Весам сегодня будет">Весы</option>
+                <option value="scorpio" data-val="Скорпионам сегодня будет">Скорпион</option>
+                <option value="sagittarius" data-val="Стрельцам сегодня будет">Стрелец</option>
+                <option value="capricorn" data-val="Козерогам сегодня будет">Козерог</option>
+                <option value="aquarius" data-val="Водолеям сегодня будет">Водолей</option>
+                <option value="pisces" data-val="Рыбам сегодня будет">Рыбы</option>
+              </select>
+            </form>
+          </div>
+          <div class="prophecy__wrapper-bottom">
+            <div id="prophecyWindow" class="prophecy__window"></div>
+          </div>
+        </div>
+      </div>
+
       <!-- Тут приветствие (рандомное или по выбору пользователя) -->
       <div class="greetings">greet</div>
+
       <!-- Здесь курс евро -->
       <div class="euro">euro</div>
+
       <!-- Тут хз -->
-      <div class="list1">list1</div>
+      <div class="list1">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+
       <!-- Тут хз -->
       <div class="list2">list2</div>
+
       <!-- Записки пользователя -->
       <div class="notes">notes</div>
+
       <!-- Сетка со ссылками по выбору пользователя -->
       <div class="web">web</div>
       </div>

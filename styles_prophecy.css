@@ -1,0 +1,31 @@
+.prophecy__container {
+  background:black;
+  box-sizing:border-box;
+  height:100%;
+  width:100%;
+}
+.prophecy__wrapper-top {
+  height:20%;
+  text-align:center;
+}
+.prophecy__form {
+  height:100%;
+  width:100%;
+}
+select {
+  height:100%;
+  width:100%;
+}
+.prophecy__wrapper-bottom {
+  height:80%;
+  width:100%;
+}
+.prophecy__window {
+  color:white;
+  font-family:monospace;
+  height:80%;
+  margin:5% auto;
+  padding-top:10%;
+  text-align:center;
+  width:80%;
+}
