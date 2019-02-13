@@ -5,7 +5,11 @@
     <title>Desktop</title>
     <link rel="stylesheet" href="styles_main.css">
     <link rel="stylesheet" href="styles_prophecy.css">
+    <link rel="stylesheet" href="styles_greetings.css">
+    <link rel="stylesheet" href="styles_notes.css">
     <script async type="text/javascript" src="script_prophecy.js"></script>
+    <script async type="text/javascript" src="script_greetings.js"></script>
+    <script async type="text/javascript" src="script_notes.js"></script>
   </head>
   <body>
     <div class="grid-container">
@@ -40,7 +44,7 @@
       </div>
 
       <!-- Тут приветствие (рандомное или по выбору пользователя) -->
-      <div class="greetings">greet</div>
+      <div id="greetingsWindow" class="greetings">greet</div>
 
       <!-- Здесь курс евро -->
       <div class="euro">euro</div>
@@ -52,7 +56,20 @@
       <div class="list2">list2</div>
 
       <!-- Записки пользователя -->
-      <div class="notes">notes</div>
+      <div id="notesContainer" class="notes">
+        <button id="notesBtn" class="notes__button">Создать</button>
+        <div id="notesWindow" class="notes__window">
+          
+        </div>
+        <div id="notesPopUp" class="notes__popup">
+          <div id="notesPopUpClose" class="notes__popup__closer">
+            Добавить
+          </div>
+          <div class="notes__text">
+            <textarea id="notesTxt" class="notes__textarea" placeholder="Введите заметку сюда"></textarea>
+          </div>
+        </div>
+      </div>
 
       <!-- Сетка со ссылками по выбору пользователя -->
       <div class="web">web</div>
