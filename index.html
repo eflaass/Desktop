@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="styles_prophecy.css">
     <link rel="stylesheet" href="styles_greetings.css">
     <link rel="stylesheet" href="styles_notes.css">
+    <link rel="stylesheet" href="styles_list2.css">
     <script async type="text/javascript" src="script_prophecy.js"></script>
     <script async type="text/javascript" src="script_greetings.js"></script>
     <script async type="text/javascript" src="script_notes.js"></script>
+    <script async type="text/javascript" src="script_list2.js"></script>
   </head>
   <body>
     <div class="grid-container">
@@ -53,13 +55,21 @@
       <div class="list1">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
 
       <!-- Тут хз -->
-      <div class="list2">list2</div>
+      <div class="list2">
+        <h4>TODO List</h4>
+        <div id="list2Window" class="list2__window">
+          <ul id="list2WindowList" class="list2__window__list">
+          </ul>
+        </div>
+        <input id="list2Input" type="text" placeholder="Введите дело" />
+        <input id="list2Submit" type="submit" value="Добавить" />
+      </div>
 
       <!-- Записки пользователя -->
       <div id="notesContainer" class="notes">
         <button id="notesBtn" class="notes__button">Создать</button>
         <div id="notesWindow" class="notes__window">
-          
+
         </div>
         <div id="notesPopUp" class="notes__popup">
           <div id="notesPopUpClose" class="notes__popup__closer">
